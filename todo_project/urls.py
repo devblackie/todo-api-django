@@ -18,7 +18,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from todo_app import views
 
 urlpatterns = [
-    path('todo_items/', views.TodoItemList.as_view(), name='todo_item_list'),
+    path('todos/', views.TodoItemList.as_view(), name='todo_item_list'),
     path('todo_items/<int:pk>/', views.TodoItemDetail.as_view(), name='todo_item_detail'),
 ]
 
